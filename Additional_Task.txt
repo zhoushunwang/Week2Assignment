@@ -1,0 +1,10 @@
+1) Explain the reason of having both nonceHash and nonceNumHash in the smart
+  contract. Can any of these two be omitted and why?
+
+Can't be removed. If one of them is removed, it will cause a security vulnerability
+
+2) Try to find out any security loopholes in the above design and propose an
+   improved solution.
+
+   When creating a smart contract, the lottery number cannot be directly passed in,
+   which is easy to cause unfairness and insecurity of the game. Generate a lottery random number on the lottery day
